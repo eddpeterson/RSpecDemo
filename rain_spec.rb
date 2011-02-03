@@ -10,4 +10,6 @@ describe "Rain" do
 
     end
   end
+  
+  it "pendind the spec"
 end
