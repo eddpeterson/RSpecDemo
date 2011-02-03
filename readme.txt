@@ -12,3 +12,6 @@ rspec -f Fuubar -f html -o specs.html ./
 
 # profile all specs times
 rspec --profile ./
+
+# run spec on one file for specific line
+rspec -f doc ./rain_spec.rb:8
