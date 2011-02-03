@@ -1,0 +1,15 @@
+Shoulda matchers
+Shoulda provides a whole bunch of Rails matchers, including:
+
+it { should render_template(:show) }
+it { should assign_to(:user).with(@user) }
+it { should redirect_to(users_path)  }
+it { should render_with_layout(:special) }
+it { should respond_with(:success)  }
+it { should route(:get, "/posts/new").to(:action => :new) }
+it { should set_the_flash.to(/created/i) }
+ 
+it { should validate_presence_of(:name) }
+it { should_not allow_mass_assignment_of(:password) }
+it { should have_one(:profile) }
+it { should have_db_column(:salary).of_type(:decimal) }
