@@ -8,4 +8,14 @@ describe Bowling do
     bowling.score.should == 0
   end
 end
-end
+end 
+
+
+
+
+#describe Stack do
+#  context "when new" do
+#    it { should be_empty }
+#    it { should have(0).items }
+#  end
+#end
