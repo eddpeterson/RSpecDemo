@@ -12,4 +12,8 @@ describe "Rain" do
   end
   
   it "pendind the spec"
+  
+  context "pending another spec" do
+    it "waiting for inspiration"
+  end
 end
