@@ -13,18 +13,16 @@ end
 
 
 describe BowlingGame do
-  before do
-    @game = BowlingGame.new
-  end
+  let(:game) { BowlingGame.new }
   
   it "scores all gutters with 0" do
-    20.times { @game.roll(0) }
-    @game.score.should == 0
+    20.times { game.roll(0) }
+    game.score.should == 0
   end
  
   it "scores all 1s with 20" do
-    20.times { @game.roll(1) }
-    @game.score.should == 20
+    20.times { game.roll(1) }
+    game.score.should == 20
   end
 end
 
