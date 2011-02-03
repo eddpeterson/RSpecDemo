@@ -15,3 +15,15 @@ rspec --profile ./
 
 # run spec on one file for specific line
 rspec -f doc ./rain_spec.rb:8
+
+# Run only specs tagged ‘current’
+rspec --tag current ./
+
+# Run specs not tagged ‘current’
+rspec --tag ~current ./
+
+# filter by tag value
+rspec --tag filter:1 ./
+
+# filter by name <stuff>
+rspec -e stuff spec/something_spec.rb
