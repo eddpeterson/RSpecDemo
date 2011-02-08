@@ -35,8 +35,10 @@ describe MocksAndSutbsSpec1 do
   #foo.bar
     # => 3
   
-  
-  
+  it "should stub all methods so that they do not throw exceptions" do
+    foo = double(:foo, :size => 3).as_null_object
+    foo.upcase
+  end
   
   
 end
